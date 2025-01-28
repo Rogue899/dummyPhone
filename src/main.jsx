@@ -22,16 +22,6 @@ Sentry.init({
   replaysOnErrorSampleRate: 1.0, // If you're not already sampling the entire session, change the sample rate to 100% when sampling sessions where errors occur.
 });
 
-// if ('serviceWorker' in navigator) {
-//   window.addEventListener('load', () => {
-//     navigator.serviceWorker.register('/service-worker.js').then(registration => {
-//       console.log('ServiceWorker registration successful with scope: ', registration.scope);
-//     }).catch(error => {
-//       console.log('ServiceWorker registration failed: ', error);
-//     });
-//   });
-// }
-
 ReactDOM.render(
   <React.StrictMode>
     <App />
