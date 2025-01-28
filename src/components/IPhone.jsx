@@ -11,9 +11,9 @@ import React, { useEffect, useRef } from "react";
 import { useGLTF, useTexture } from "@react-three/drei";
 
 function Model(props) {
-  const { nodes, materials } = useGLTF("/dummyPhone/models/scene.glb");
+  const { nodes, materials } = useGLTF("models/scene.glb");
 
-  const texture = useTexture('/dummyPhone/'+props.item.img);
+  const texture = useTexture(props.item.img);
 
     useEffect(() => {
       Object.entries(materials).map((material) => {
